@@ -4,8 +4,21 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'ru-RU',
   title: "Arsland",
+  lastUpdated: true,
   description: "",
   themeConfig: {
+    lightModeSwitchTitle: "Переключить на светлую тему",
+    darkModeSwitchTitle: "Переключить на тёмную тему",
+    sidebarMenuLabel: "Меню",
+    returnToTopLabel: "Наверх",
+    docFooter: {
+      prev: "Предыдущая страница",
+      next: "Следующая страница",
+    },
+    lastUpdated: {
+      text: "Последнее обновление",
+    },
+    outlineTitle: "На этой странице",
     search: {
       provider: 'local'
     },
@@ -19,7 +32,13 @@ export default defineConfig({
       {
         text: 'Майнкрафт сервер',
         items: [
-          { text: 'Правила', link: '/rule' }
+          { text: 'Правила Minecraft', link: '/rule_minecraft' }
+        ]
+      },
+      {
+        text: 'Discord',
+        items: [
+          { text: 'Правила Discord сервера', link: '/rule_discord'}
         ]
       }
     ],

@@ -1,1 +1,0 @@
-import{_ as a,c as e,o as l,a3 as t}from"./chunks/framework.z7kdJ_yr.js";const f=JSON.parse('{"title":"Правила","description":"","frontmatter":{},"headers":[],"relativePath":"rule.md","filePath":"rule.md"}'),i={name:"rule.md"},o=t("",7),r=[o];function n(s,c,_,h,d,u){return l(),e("div",null,r)}const p=a(i,[["render",n]]);export{f as __pageData,p as default};

@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: Подробнее
-      link: /rule
+      link: /rule_minecraft
     - theme: alt
       text: Обратно
       link: https://arsland-minecraft.ru
