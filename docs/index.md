@@ -7,8 +7,8 @@ hero:
   text: ""
   tagline: Документация и правила проекта Arsland
   image:
-    src: 'faviction/logo.png'
-    alt: 'Logo'
+    src: /logo.svg
+    alt: 'Arsland Logo'
   actions:
     - theme: brand
       text: Подробнее
@@ -18,11 +18,13 @@ hero:
       link: https://arsland-minecraft.ru
 
 features:
-  # - title: Подробнее
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - title: Feature B
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - title: Feature C
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🛡️
+    details: Хорошая безопасность от читеров и адекватная администрация
+  - icon: 💾
+    details: Открытое ПО лаунчера от Aurora Team
+  - icon: 🚀
+    details: Стабильный ТПС и пинг от сервера Minecraft
+  - icon: 📦
+    details: Проработанная сборка модов
 ---
 
