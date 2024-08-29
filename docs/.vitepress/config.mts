@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Arsland Docs",
   lastUpdated: true,
   description: "",
+  cleanUrls: true,
   head: [['link', { rel: 'icon', href: '/faviction/logo.ico' }]],
   themeConfig: {
     lightModeSwitchTitle: "Переключить на светлую тему",
