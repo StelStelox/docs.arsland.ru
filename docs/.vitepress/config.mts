@@ -51,7 +51,7 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'Майнкрафт сервер',
+        text: 'Minecraft',
         items: [
           { text: 'Правила Minecraft', link: '/rule_minecraft' }
         ]
@@ -59,7 +59,7 @@ export default defineConfig({
       {
         text: 'Discord',
         items: [
-          { text: 'Правила Discord сервера', link: '/rule_discord'}
+          { text: 'Правила Discord', link: '/rule_discord'}
         ]
       }
     ],
