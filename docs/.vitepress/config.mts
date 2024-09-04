@@ -51,6 +51,11 @@ export default defineConfig({
     ],
     sidebar: [
       {
+        items: [
+          { text: 'Конфиденциальность', link: '/confidentiality' }
+        ]
+      },
+      {
         text: 'Minecraft',
         items: [
           { text: 'Правила Minecraft', link: '/rule_minecraft' }
