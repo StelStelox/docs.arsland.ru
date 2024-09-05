@@ -43,7 +43,7 @@ export default defineConfig({
         },
       },
     },
-    logo: 'faviction/logo.ico',
+    logo: '/faviction/logo.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Главная', link: '/' },
