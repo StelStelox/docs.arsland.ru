@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'ru-RU',
   title: "Arsland Docs",
   lastUpdated: true,
-  description: "",
+  description: "Документация проекта Arsland",
   cleanUrls: true,
   head: [['link', { rel: 'icon', href: '/faviction/logo.ico' }]],
   themeConfig: {
