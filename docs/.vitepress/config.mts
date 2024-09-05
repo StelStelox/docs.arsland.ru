@@ -46,25 +46,25 @@ export default defineConfig({
     logo: 'faviction/logo.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Главня', link: '/' },
+      { text: 'Главная', link: '/' },
       { text: 'Личный кабинет', link: 'https://arsland-minecraft.ru'}
     ],
     sidebar: [
       {
         items: [
-          { text: 'Конфиденциальность', link: '/confidentiality' }
+          { text: 'Конфиденциальность', link: '/basic/confidentiality' }
         ]
       },
       {
         text: 'Minecraft',
         items: [
-          { text: 'Правила Minecraft', link: '/rule_minecraft' }
+          { text: 'Правила Minecraft', link: '/basic/rule_minecraft' }
         ]
       },
       {
         text: 'Discord',
         items: [
-          { text: 'Правила Discord', link: '/rule_discord'}
+          { text: 'Правила Discord', link: '/basic/rule_discord'}
         ]
       }
     ],
