@@ -28,3 +28,12 @@ features:
     details: Проработанная сборка модов
 ---
 
+<style>
+  :root {
+  scroll-behavior: smooth;
+
+  --vp-c-brand-1: #92e03f;
+  --vp-c-brand-2: #87bf4b;
+  --vp-c-brand-3: #8ed640;
+  }
+</style>
