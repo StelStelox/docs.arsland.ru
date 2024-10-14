@@ -1,0 +1,1 @@
+Documentation for the Arsland Minecraft project created with [Vite Press](https://github.com/vuejs/vitepress)
