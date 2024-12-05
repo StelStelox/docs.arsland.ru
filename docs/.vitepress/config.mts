@@ -58,7 +58,8 @@ export default defineConfig({
       {
         text: 'Minecraft',
         items: [
-          { text: 'Правила Minecraft', link: '/basic/rule_minecraft' }
+          { text: 'Правила Minecraft', link: '/basic/rule_minecraft' },
+          { text: 'Приваты', link: '/basic/private_minecraft'}
         ]
       },
       {
