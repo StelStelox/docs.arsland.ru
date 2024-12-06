@@ -67,11 +67,17 @@ export default defineConfig({
         items: [
           { text: 'Правила Discord', link: '/basic/rule_discord'}
         ]
+      },
+      {
+        text: 'Telegram',
+        items: [
+          { text: 'Правила Telegram', link: '/basic/rule_telegram'}
+        ]
       }
     ],
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg/e3X5AbSfsj' },
+      { icon: 'discord', link: 'https://discord.gg/e3X5AbSfsj'},
       { icon: 'youtube', link: 'https://www.youtube.com/channel/UC0zwpV-3WpG0vLpMGZaXuzA'},
       { icon: 'telegram', link: 'https://t.me/arsland_minecraft'},
   
