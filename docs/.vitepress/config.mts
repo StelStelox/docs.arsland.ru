@@ -77,7 +77,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.gg/e3X5AbSfsj'},
+      { icon: 'discord', link: 'https://discord.arsland-minecraft.ru/'},
       { icon: 'youtube', link: 'https://www.youtube.com/channel/UC0zwpV-3WpG0vLpMGZaXuzA'},
       { icon: 'telegram', link: 'https://t.me/arsland_minecraft'},
   
