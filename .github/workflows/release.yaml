@@ -40,7 +40,7 @@ jobs:
           username: ${{ secrets.USER }}
           script: |
             cd ${{ secrets.DIR }}
-            rm -rf *
+            rm -rf * || true 
 
       - name: Deploying the site
         uses: easingthemes/ssh-deploy@main
