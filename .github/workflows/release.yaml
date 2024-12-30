@@ -34,20 +34,20 @@ jobs:
       - name: Cleaning up the site directory before deployment
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.SSH_SERVER_IP }}
-          port: ${{ secrets.SSH_SERVER_PORT }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.HOST }}
+          port: ${{ secrets.PORT }}
+          password: ${{ secrets.PASSWORD }}
+          username: ${{ secrets.USER }}
           script: |
-            cd ${{ secrets.SITE_DIR }}
+            cd ${{ secrets.DIR }}
             rm -rf *
 
       - name: Deploying the site
         uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.SSH_SERVER_IP }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          REMOTE_PORT: ${{ secrets.SSH_SERVER_PORT }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USER }}
+          REMOTE_PORT: ${{ secrets.PORT }}
           SOURCE: "docs/.vitepress/dist/"
           TARGET: ${{ secrets.SITE_DIR }}
