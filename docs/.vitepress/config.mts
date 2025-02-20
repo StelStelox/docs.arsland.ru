@@ -83,6 +83,11 @@ export default defineConfig({
       { icon: 'discord', link: 'https://discord.arsland.ru'},
       { icon: 'telegram', link: 'https://telegram.arsland.ru'},
   
-    ]
+    ],
+
+    footer: {
+      message: 'Опубликовано под лицензией MIT.',
+      copyright: '© 2025 – настоящее время, StelStelox'
+    }
   }
 })
