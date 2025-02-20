@@ -7,7 +7,10 @@ export default defineConfig({
   lastUpdated: true,
   description: "Документация проекта Arsland",
   cleanUrls: true,
-  head: [['link', { rel: 'icon', href: '/faviction/logo.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/faviction/logo.ico' }],
+    ["meta", { name: "theme-color", content: "#92e03f" }],
+  ],
   themeConfig: {
     lightModeSwitchTitle: "Переключить на светлую тему",
     darkModeSwitchTitle: "Переключить на тёмную тему",
@@ -77,9 +80,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'discord', link: 'https://discord.arsland-minecraft.ru/'},
-      { icon: 'youtube', link: 'https://www.youtube.com/channel/UC0zwpV-3WpG0vLpMGZaXuzA'},
-      { icon: 'telegram', link: 'https://t.me/arsland_minecraft'},
+      { icon: 'discord', link: 'https://discord.arsland.ru'},
+      { icon: 'telegram', link: 'https://telegram.arsland.ru'},
   
     ]
   }
