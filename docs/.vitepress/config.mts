@@ -71,7 +71,7 @@ export default defineConfig({
       link: "/en/",
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/' },
+          { text: 'Home', link: '/en/' },
           { text: 'WebSite', link: 'https://arsland-minecraft.ru'}
         ],
         footer: {
