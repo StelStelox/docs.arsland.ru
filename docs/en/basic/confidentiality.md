@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date: 09/04/2024**
+**Effective Date: 09.04.2024**
 
 Your trust in the confidentiality of your data is important to us. This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our services, including our launcher and personal account (hereinafter referred to as "services").
 
