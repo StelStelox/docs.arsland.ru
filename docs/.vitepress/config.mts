@@ -14,11 +14,13 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://docs.arsland.ru'
   },
+  rewrites: {
+    'ru/:rest*': ':rest*'
+  },
   locales: {
     root: {
       label: "Русский",
       lang: "ru",
-      link: "/ru/",
       themeConfig: {
         lightModeSwitchTitle: "Переключить на светлую тему",
         darkModeSwitchTitle: "Переключить на тёмную тему",
@@ -34,7 +36,7 @@ export default defineConfig({
         },
         outlineTitle: "На этой странице",
         nav: [
-          { text: 'Главная', link: '/ru/' },
+          { text: 'Главная', link: '/' },
           { text: 'Личный кабинет', link: 'https://arsland-minecraft.ru'}
         ],
         footer: {
@@ -44,26 +46,26 @@ export default defineConfig({
         sidebar: [
           {
             items: [
-              { text: 'Конфиденциальность', link: '/ru/basic/confidentiality' }
+              { text: 'Конфиденциальность', link: '/basic/confidentiality' }
             ]
           },
           {
             text: 'Minecraft',
             items: [
-              { text: 'Правила Minecraft', link: '/ru/basic/rule_minecraft' },
-              { text: 'Приваты', link: '/ru/basic/private_minecraft'}
+              { text: 'Правила Minecraft', link: '/basic/rule_minecraft' },
+              { text: 'Приваты', link: 'basic/private_minecraft'}
             ]
           },
           {
             text: 'Discord',
             items: [
-              { text: 'Правила Discord', link: '/ru/basic/rule_discord'}
+              { text: 'Правила Discord', link: '/basic/rule_discord'}
             ]
           },
           {
             text: 'Telegram',
             items: [
-              { text: 'Правила Telegram', link: '/ru/basic/rule_telegram'}
+              { text: 'Правила Telegram', link: '/basic/rule_telegram'}
             ]
           }
         ],

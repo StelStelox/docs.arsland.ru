@@ -15,11 +15,16 @@ hero:
 
 features:
   - icon: 🛡️
-    title: Good security from cheaters and adequate administration
+    title: Security
+    details: Good security from cheaters and adequate administration
   - icon: 💾
-    title: Open source launcher software from Aurora Team
+    title: AuroraTeam
+    details: Open source launcher software from Aurora Team
+    link: https://aurora-team.ru
   - icon: 🚀
-    title: Stable TPS and ping from Minecraft server
+    title: Performance
+    details: Stable TPS and ping from Minecraft server
   - icon: 📦
-    title: Well-developed mod assembly
+    title: Content
+    details: Well-developed mod assembly
 ---
