@@ -1,8 +1,8 @@
 on:
-    push:
-        branches:
-            - main
-    workflow_dispatch:
+  push:
+      branches:
+          - main
+  workflow_dispatch:
 
 jobs: 
     deploy:
@@ -17,6 +17,11 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: 20
+            
+            - name: Get npm cache directory
+              id: npm-cache-dir
+              shell: bash
+              run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
 
             - name: Install dependencies
               run: npm i
@@ -33,7 +38,7 @@ jobs:
             - name: Deploy to server
               run: |
                 scp -p ${{ secrets.SSH_PORT }} -r ./docs/.vitepress/dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
-                ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "mkdir -p /home/docs && chown admin:admin /home/docs && cd ${{ secrets.WORK_DIR }} && exit"
+                ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && exit"
 
             - name: Cleanup
               run: rm -rf ~/.ssh
