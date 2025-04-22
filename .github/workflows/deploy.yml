@@ -37,8 +37,7 @@ jobs:
 
             - name: Deploy to server
               run: |
-                scp -r ./docs/.vitepress/dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
-                ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && exit"
+                scp -P ${{ secrets.SSH_PORT }} -r ./docs/.vitepress/dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.WORK_DIR }}
 
             - name: Cleanup
               run: rm -rf ~/.ssh
